@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0B1530">
+<title>Behind the Show · Lights on Fawn</title>
+<meta name="description" content="How the Lights on Fawn Christmas light show works: the props, the controllers, the sequencing and the 2026 set list.">
+<meta property="og:title" content="Behind the Show · Lights on Fawn">
+<meta property="og:description" content="The props, controllers and songs behind the Lights on Fawn Christmas light show.">
+<meta property="og:image" content="https://kguthrie040.github.io/lights-on-fawn/assets/badge-1024.png">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" href="assets/badge-512.png">
+<link rel="apple-touch-icon" href="assets/badge-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,600&family=Inter:wght@400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hero">
+  <img class="hero-badge" src="assets/badge-mark.svg" width="260" height="260" alt="Lights on Fawn badge: a ring of bulbs around a mega tree of lights">
+  <p class="eyebrow">Lights on Fawn · 2026 Show</p>
+  <h1>Behind the Show</h1>
+  <p class="lede">Every light out front is a pixel that can change colour 40 times a second. Here's what's in the yard, what drives it, and how a song becomes a light show.</p>
+  <a class="btn" href="https://psm.sh/6DYR">♪ Back to the show audio</a>
+</header>
+
+<nav class="toc" aria-label="On this page">
+  <a href="#props">The props</a>
+  <a href="#how">How it works</a>
+  <a href="#sequencing">Sequencing</a>
+  <a href="#setlist">Set list</a>
+</nav>
+
+<main id="main">
+
+  <section class="stats" aria-label="The show at a glance">
+    <div class="stat"><span class="stat-n">10</span><span class="stat-l">songs in the 2026 show</span></div>
+    <div class="stat"><span class="stat-n">40</span><span class="stat-l">frames per second</span></div>
+    <div class="stat"><span class="stat-n">25<small>ms</small></span><span class="stat-l">between every lighting change</span></div>
+  </section>
+
+  <!-- ===================== PROPS ===================== -->
+  <section id="props" class="section">
+    <h2>The props</h2>
+    <p class="section-intro">A "prop" is anything in the yard the show can light. Each one is made of individually addressable pixels, so any bulb can be any colour at any moment.</p>
+
+    <div class="cards">
+      <article class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6 12 38h24z"/><path d="M24 38v4"/><circle cx="24" cy="5" r="2" class="fill"/></svg>
+        <h3>Seed Trees &amp; Seed Stars</h3>
+        <p>The tall centrepieces. Sequenced like a classic mega tree, with spirals, sweeps and bursts that climb to the stars on top.</p>
+      </article>
+
+      <article class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38 14 20l6 18z"/><path d="M28 38 34 20l6 18z"/><path d="M18 38c0-10 3-14 6-14s6 4 6 14"/></svg>
+        <h3>Mini trees &amp; arches</h3>
+        <p>A row that alternates little trees and arches along the front. Great for chases that run from one end of the yard to the other.</p>
+      </article>
+
+      <article class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="14" width="22" height="16" rx="2"/><rect x="31" y="8" width="6" height="8" rx="1"/><rect x="39" y="8" width="5" height="8" rx="1"/><path d="M10 22h2M16 20h2M21 24h2"/></svg>
+        <h3>Three matrices, one sky</h3>
+        <p>The big garage matrix and two smaller panels act as three windows onto the same night sky. Stars, snow and the occasional sleigh travel across all three.</p>
+      </article>
+
+      <article class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M17 8a10 10 0 0 1 14 0c4 4 3 9 0 13-2 2-2 4-2 6H19c0-2 0-4-2-6-3-4-4-9 0-13z"/><path d="M19 31h10M20 35h8M22 39h4"/><circle cx="21" cy="15" r="1.5" class="fill"/><circle cx="27" cy="15" r="1.5" class="fill"/><path d="M21 20c2 2 4 2 6 0"/></svg>
+        <h3>Singing bulbs</h3>
+        <p>Two giant bulbs with faces. One sings the lead vocal, the other backs it up, with mouth shapes timed to the lyrics.</p>
+      </article>
+
+      <article class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="9"/><path d="M24 8v-3M24 43v-3"/></svg>
+        <h3>The wreath</h3>
+        <p>Rings of pixels that pulse in and out from the centre, matching the other round props.</p>
+      </article>
+
+      <article class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4v40M6.7 14l34.6 20M6.7 34l34.6-20"/><path d="M20 8l4 4 4-4M20 40l4-4 4 4"/></svg>
+        <h3>Quilted Snowflakes</h3>
+        <p>A north and a south snowflake from Gilbert Engineering, made of separate rings and spokes that can each be lit on their own.</p>
+      </article>
+
+      <article class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18"/><path d="M24 6c6 6 6 30 0 36M24 6c-6 6-6 30 0 36M6 24h36"/></svg>
+        <h3>Infinity spinner</h3>
+        <p>A round spinner whose segments make the light look like it's whirling, spiralling or blooming outward.</p>
+      </article>
+
+      <article class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="26" r="15"/><path d="M14 13 24 4l10 9"/><path d="M24 11v30M9 26h30"/></svg>
+        <h3>Hattitude Quartet</h3>
+        <p>Built to be four singing hats, but here it's used as a second spinner for big, round in-and-out effects.</p>
+      </article>
+
+      <article class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 34 18 22h4l8 12z"/><path d="M20 22V12M14 12l6-6 6 6M34 10l6-4M36 18h6M34 26l6 4"/></svg>
+        <h3>Spotlights</h3>
+        <p>Five colour floods wash the house itself, shifting to match the rest of the yard and flashing on the big moments.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section id="how" class="section">
+    <h2>How it works</h2>
+    <p class="section-intro">From a song file on a laptop to light in the yard and sound in your car.</p>
+
+    <ol class="flow">
+      <li class="step">
+        <span class="step-n">1</span>
+        <div><h3>Design in xLights</h3><p>Each song is laid out frame by frame in <strong>xLights</strong>, free software where every prop in the yard is modelled pixel for pixel.</p></div>
+      </li>
+      <li class="step">
+        <span class="step-n">2</span>
+        <div><h3>Play it with FPP</h3><p>The finished sequences run on <strong>Falcon Player (FPP)</strong> inside a Genius Pixel 16 controller, which keeps the playlist on schedule every night.</p></div>
+      </li>
+      <li class="step">
+        <span class="step-n">3</span>
+        <div><h3>Out to the yard</h3><p>The controller feeds long-distance receivers out in the yard, which pass the data down to each prop's pixels, 40 times a second.</p></div>
+      </li>
+      <li class="step">
+        <span class="step-n">4</span>
+        <div><h3>Sound on your phone</h3><p><strong>PulseMesh</strong> streams the music to your phone in sync with the lights, so you can listen in your car without a loud speaker out front.</p></div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===================== SEQUENCING ===================== -->
+  <section id="sequencing" class="section">
+    <h2>Sequencing</h2>
+    <div class="split">
+      <div class="card prose">
+        <h3>What's a "sequence"?</h3>
+        <p>A sequence is the light show for one song: a timeline of effects placed on every prop, lined up to the beats, notes and lyrics. At 40 frames per second, a three-minute song is over 7,000 frames for every pixel in the yard.</p>
+      </div>
+      <div class="card prose">
+        <h3>Made for this yard</h3>
+        <p>Some songs start from sequences bought from other designers and are then remapped and retuned for these props. Others are built here. Each one goes through many versions, reviewed and tweaked until it feels right.</p>
+      </div>
+      <div class="card prose">
+        <h3>xLights Around the World</h3>
+        <p>Two songs this year come from <strong>xLights Around the World</strong>, where displays everywhere run the same sequences on the same nights. <em>Fireflies</em> and <em>Shake the Snowglobe</em> are this yard's take.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SET LIST ===================== -->
+  <section id="setlist" class="section">
+    <h2>The 2026 set list</h2>
+    <ol class="setlist">
+      <li><span class="song">Christmas Canon</span><span class="artist">Trans-Siberian Orchestra</span></li>
+      <li><span class="song">Run Run Rudolph</span><span class="artist">Kelly Clarkson</span></li>
+      <li><span class="song">Fireflies</span><span class="artist">xLights Around the World 2026</span></li>
+      <li><span class="song">Golden</span><span class="artist">KPop Demon Hunters</span></li>
+      <li><span class="song">Polar Express Medley</span></li>
+      <li><span class="song">Christmas Wrapping</span></li>
+      <li><span class="song">Shake the Snowglobe</span><span class="artist">xLights Around the World 2026</span></li>
+      <li><span class="song">Christmas Tree Farm</span><span class="artist">Taylor Swift</span></li>
+      <li><span class="song">Mongolian Jingle Bells</span></li>
+      <li><span class="song">Emmanuel God With Us</span></li>
+    </ol>
+  </section>
+
+  <section class="section hours" aria-labelledby="hours-h">
+    <h2 id="hours-h">Show hours</h2>
+    <div class="hours-grid">
+      <div class="card"><span class="days">Sun – Wed</span><span>4:30 – 9:30 PM</span></div>
+      <div class="card"><span class="days">Thu – Sat</span><span>4:30 – 10:30 PM</span></div>
+    </div>
+    <a class="btn" href="https://psm.sh/6DYR">♪ Listen along</a>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Lights on Fawn · Merry Christmas!</p>
+</footer>
+
+</body>
+</html>
