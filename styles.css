@@ -277,6 +277,16 @@ main { max-width: 960px; margin: 0 auto; padding: 8px 20px 24px; }
 .fb-link svg { fill: none; stroke: var(--ice); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .fb-link:hover { border-color: var(--ice); }
 
+/* desktop: hours cards on the left, buttons stacked on the right, using the full width */
+@media (min-width: 720px) {
+  .hours { display: grid; grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr); column-gap: 14px; row-gap: 16px; align-items: stretch; }
+  .hours > h2 { grid-column: 1 / -1; }
+  .hours-grid { grid-template-columns: 1fr 1fr; width: 100%; }
+  .hours-grid .card { justify-content: center; }
+  .hours-actions { flex-direction: column; justify-content: center; gap: 10px; }
+  .hours-actions .btn { text-align: center; }
+}
+
 @media (max-width: 480px) {
   body { font-size: 16px; }
   .stats { gap: 8px; }
@@ -284,4 +294,6 @@ main { max-width: 960px; margin: 0 auto; padding: 8px 20px 24px; }
   .stat-l { font-size: 13px; }
   .hours-grid { grid-template-columns: 1fr 1fr; width: 100%; }
   .hours-grid .card { font-size: 16px; padding: 16px 14px; }
+  .hours-actions { width: 100%; }
+  .hours-actions .btn { flex: 1 1 100%; text-align: center; }
 }
