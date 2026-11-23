@@ -193,28 +193,58 @@ main { max-width: 960px; margin: 0 auto; padding: 8px 20px 24px; }
   list-style: none;
   counter-reset: song;
   margin: 0;
-  padding: 6px 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.setlist li {
+  counter-increment: song;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px 10px 10px;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
 }
-.setlist li {
-  counter-increment: song;
-  display: grid;
-  grid-template-columns: 44px 1fr;
-  column-gap: 8px;
-  padding: 12px 20px;
-  border-top: 1px solid var(--line);
+.setlist .cover {
+  flex: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--card2);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;  /* 1st image = album art, 2nd = drawn tile if the art can't load */
+  box-shadow: 0 0 0 1px var(--line);
 }
-.setlist li:first-child { border-top: 0; }
-.setlist li::before {
+.setlist .tag {
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  font: 700 10px/1.4 var(--label);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--ice);
+  white-space: nowrap;
+}
+.setlist li::after {
   content: counter(song, decimal-leading-zero);
-  grid-row: span 2;
-  font: 700 18px/1.5 var(--label);
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font: 700 13px/1 var(--label);
   color: var(--accent);
+  opacity: .8;
 }
-.setlist .song { font-weight: 600; }
-.setlist .artist { color: var(--soft); font-size: 15px; grid-column: 2; }
+.song-info { display: flex; flex-direction: column; gap: 2px; min-width: 0; padding-right: 22px; }
+.setlist .song { font-weight: 600; font-size: 17px; line-height: 1.25; }
+.setlist .artist { color: var(--soft); font-size: 14px; }
 
 /* ---------- hours ---------- */
 .hours { align-items: flex-start; }
